@@ -33,22 +33,24 @@
 		}
     }
   	</script>
-	</script>
-function countLeftClick() {
-	leftClicks++;
-	// ***** keep console.log for vault clue purposes *****
-	console.log(leftClicks);
-
-	if (leftClicks === 5) {
-		setTimeout(function() {
-			if(window.location.href.indexOf("index") > -1) {
-				window.location = 'https://ilovebeez.com/743_8361N-1N6.html';
-			} else {
-				window.location = '/the_end';
-			}
-		}, 60000)
-	}
-	</script>
+<script type="text/javascript">
+    document.onkeydown = function(event) {
+        switch (event.keyCode) {
+           case 37:
+                alert('Left key pressed');
+              break;
+           case 38:
+                alert('Up key pressed');
+              break;
+           case 39:
+                alert('Right key pressed');
+              break;
+           case 40:
+                alert('Down key pressed');
+              break;
+        }
+    };
+</script>
   </head>
   <body>
   	<div class="site-header">
